@@ -1,0 +1,42 @@
+<h1>string-intropolation works!</h1>
+
+<table>
+  <tr>
+    <th>Name :</th>
+    <th>{{name}}</th>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <th>{{age}}</th>
+  </tr>
+  <tr>
+    <th>Salary</th>
+    <th>{{salary}}</th>
+  </tr>
+  <tr>
+    <th>Math:</th>
+    <th>{{math}}</th>
+  </tr>
+  <tr>
+    <th>Science:</th>
+    <th>{{sci}}</th>
+  </tr>
+  <tr>
+    <th>English</th>
+    <th>{{eng}}</th>
+  </tr>
+  <tr>
+    <th>English</th>
+    <th [innerHTML]="eng"></th>
+  </tr>
+  <tr>
+    <th>Total</th>
+    <th>{{math+sci+eng}}</th>
+  </tr>
+
+
+</table>
+<input type="button" value="save" disabled>
+<input type="button" value="save">
+<input type="button" [disabled]="isdisabled" value="save" [style]="colorp">
+<input type="button" disabled="{{isdisabled}}" value="save">
