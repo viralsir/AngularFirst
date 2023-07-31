@@ -5,13 +5,15 @@ import { ParentComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { StringIntropolationComponent } from './string-intropolation/string-intropolation.component';
+import { StudentFormComponent } from './student-form/student-form.component';
 
 @NgModule({
   declarations: [
     ParentComponent,
     FirstComponent,
     SecondComponent,
-    StringIntropolationComponent
+    StringIntropolationComponent,
+    StudentFormComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,43 @@
+<form>
+     <table>
+        <tr>
+          <th colspan="2"> Student Info</th>
+        </tr>
+        <tr>
+          <th>Roll No:</th>
+          <td><input type="number" size="20" #rno></td>
+        </tr>
+       <tr>
+         <th>Name :</th>
+         <td>
+           <input type="text" size="20" #name>
+         </td>
+       </tr>
+       <tr>
+         <th>
+           Maths :
+         </th>
+         <td>
+           <input type="number" (focusout)="validate_mark(maths,0,scinence)" #maths>  <span class="error">{{mathserror}}</span>
+         </td>
+       </tr>
+       <tr>
+         <th>
+           Science :
+         </th>
+         <td>
+           <input type="number" (focusout)="validate_mark(scinence,1,savebtn)"  #scinence>  <span class="error"> {{scienceerror}}</span>
+         </td>
+       </tr>
+       <tr>
+         <td colspan="2" align="center">
+           <input type="button" value="save" [disabled]="savebtndisabled"  (click)="save(rno,name)" #savebtn>
+           <input type="reset" value="clear">
+         </td>
+       </tr>
+     </table>
+</form>
+
+<h1>
+  {{msg}}
+</h1>
