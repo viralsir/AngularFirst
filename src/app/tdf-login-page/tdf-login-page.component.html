@@ -1,8 +1,10 @@
 <h1>tdf-login-page works!</h1>
 <form #loginFormRef="ngForm" (ngSubmit)="checkuser(loginFormRef)">
-   UserName : <input type="text" name="username"  ngModel> <br/>
-  Password : <input type="password" name="password"  ngModel><br/>
-  <input type="submit" value="login"> <input type="reset" value="clear">
+   UserName : <input type="text" name="username"  ngModel  required> <br/>
+  Password : <input type="password" name="password"  ngModel required><br/>
+  <input type="submit" value="login" [disabled]="loginFormRef.invalid"> <input type="reset" value="clear">
 
 </form>
 <h3>{{msg}}</h3>
+<h3>{{loginFormRef.valid}}</h3>
+<h3>{{loginFormRef.invalid}}</h3>

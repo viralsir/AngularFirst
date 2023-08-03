@@ -1,0 +1,11 @@
+<h1>Model Driven Form</h1>
+<form [formGroup]="loginFormGroup"  (ngSubmit)="checkUser()">
+   UserName : <input type="text"  placeholder="username" size="20"  formControlName="username" > <br/>
+   Password : <input type="password" size="20" formControlName="pass"> <br/>
+  <input type="submit"  value="Login" [disabled]="loginFormGroup.invalid" id="login">
+  <input type="reset" value="clear">
+</form>
+<h4>{{msg}}</h4>
+<h3>{{loginFormGroup.valid}}</h3>
+<h3>{{loginFormGroup.invalid}}</h3>
+

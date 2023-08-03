@@ -7,8 +7,9 @@ import { SecondComponent } from './second/second.component';
 import { StringIntropolationComponent } from './string-intropolation/string-intropolation.component';
 import { StudentFormComponent } from './student-form/student-form.component';
 import { TwoDiBindingComponent } from './two-di-binding/two-di-binding.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TdfLoginPageComponent } from './tdf-login-page/tdf-login-page.component';
+import { MdfLoginPageComponent } from './mdf-login-page/mdf-login-page.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,13 @@ import { TdfLoginPageComponent } from './tdf-login-page/tdf-login-page.component
     StringIntropolationComponent,
     StudentFormComponent,
     TwoDiBindingComponent,
-    TdfLoginPageComponent
+    TdfLoginPageComponent,
+    MdfLoginPageComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [ParentComponent]
