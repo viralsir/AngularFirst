@@ -10,6 +10,7 @@ import { TwoDiBindingComponent } from './two-di-binding/two-di-binding.component
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TdfLoginPageComponent } from './tdf-login-page/tdf-login-page.component';
 import { MdfLoginPageComponent } from './mdf-login-page/mdf-login-page.component';
+import { StructureDirectiveComponent } from './structure-directive/structure-directive.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MdfLoginPageComponent } from './mdf-login-page/mdf-login-page.component
     StudentFormComponent,
     TwoDiBindingComponent,
     TdfLoginPageComponent,
-    MdfLoginPageComponent
+    MdfLoginPageComponent,
+    StructureDirectiveComponent
   ],
   imports: [
     BrowserModule,

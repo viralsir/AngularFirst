@@ -1,0 +1,58 @@
+<h1>structure-directive works!</h1>
+<!--syntax :-->
+<!--        *ngif-->
+<!--           <tag *ngif="condition">statement</tag>-->
+<!--        *ngfor-->
+         <!-- syntax :
+              <tag *ngfor="let element of arrayname>    </tag>"
+         -->
+<h1 *ngIf="false">this is a first heading statement</h1>
+<h1 *ngIf="true">this is a second heading statement</h1>
+<h1 *ngIf="b1">this is a third heading statement</h1>
+<h1 *ngIf="b2">this is a fourth heading statement</h1>
+<input type="button" value="click here" (click)="changeValue()"  />
+
+<hr/>
+<input type="button" [value]="caption" (click)="toggle()">
+
+<div *ngIf="showContent">
+     This is ngif demostratation content
+</div>
+
+<hr/>
+<h1>  ngFor </h1>
+<input type="text" size="20" placeholder="Enter Name" #inputname>
+<input type="button" value="add" (click)="addName(inputname)">
+
+<ul>
+  <li *ngFor="let name of names">{{name}}</li>
+
+</ul>
+<!--
+<ul *ngFor="let name of names">
+    <li>{{name}}</li>
+</ul>
+-->
+<hr/>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Salary</th>
+  </tr>
+  <tr *ngFor="let emp of employees">
+    <td>{{emp.id}}</td>
+    <td>{{emp.name}}</td>
+    <td>{{emp.salary}}</td>
+  </tr>
+</table>
+
+<hr/>
+<h1 style="color: red;"> this is html style</h1>
+<h1 [ngStyle]="{'color':'red'}" > this is ngStyle</h1>
+<h1 [ngStyle]="myStyle" > this is ngStyle</h1>
+
+<h1 class="abc"> this is html class </h1>
+<h1 [ngClass]="{abc:false,xyz:true}">this is ngclass </h1>
+
+
