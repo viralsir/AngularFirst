@@ -11,6 +11,10 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TdfLoginPageComponent } from './tdf-login-page/tdf-login-page.component';
 import { MdfLoginPageComponent } from './mdf-login-page/mdf-login-page.component';
 import { StructureDirectiveComponent } from './structure-directive/structure-directive.component';
+import { FirstComponentWithoutDIComponent } from './first-component-without-di/first-component-without-di.component';
+import { SecondComponentWithoutDIComponent } from './second-component-without-di/second-component-without-di.component';
+import { FirstComponentWithDIComponent } from './first-component-with-di/first-component-with-di.component';
+import { SecondComponentWithDiComponent } from './second-component-with-di/second-component-with-di.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { StructureDirectiveComponent } from './structure-directive/structure-dir
     TwoDiBindingComponent,
     TdfLoginPageComponent,
     MdfLoginPageComponent,
-    StructureDirectiveComponent
+    StructureDirectiveComponent,
+    FirstComponentWithoutDIComponent,
+    SecondComponentWithoutDIComponent,
+    FirstComponentWithDIComponent,
+    SecondComponentWithDiComponent
   ],
   imports: [
     BrowserModule,
