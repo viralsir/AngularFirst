@@ -15,6 +15,8 @@ import { FirstComponentWithoutDIComponent } from './first-component-without-di/f
 import { SecondComponentWithoutDIComponent } from './second-component-without-di/second-component-without-di.component';
 import { FirstComponentWithDIComponent } from './first-component-with-di/first-component-with-di.component';
 import { SecondComponentWithDiComponent } from './second-component-with-di/second-component-with-di.component';
+import {HttpClientModule} from "@angular/common/http";
+import { FakeRestComponentComponent } from './fake-rest-component/fake-rest-component.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +32,14 @@ import { SecondComponentWithDiComponent } from './second-component-with-di/secon
     FirstComponentWithoutDIComponent,
     SecondComponentWithoutDIComponent,
     FirstComponentWithDIComponent,
-    SecondComponentWithDiComponent
+    SecondComponentWithDiComponent,
+    FakeRestComponentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [ParentComponent]

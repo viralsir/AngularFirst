@@ -1,0 +1,16 @@
+<p>fake-rest-component works!</p>
+<input type="button" value="call rest api" (click)="displaydata()">
+<table>
+  <tr>
+    <th>UserId</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+  <tr *ngFor="let fake of fakeJsonData">
+       <td>{{fake.userId}}</td>
+       <td>{{fake.id}}</td>
+        <td>{{fake.title}}</td>
+       <td>{{fake.body}}</td>
+  </tr>
+</table>
